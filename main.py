@@ -40,7 +40,7 @@ def get_answer_from_txt(user_question, qa_pairs):
 st.title("Assistente Virtual")
 
 # Carregar perguntas e respostas
-input_file = 'c:\\Users\\tupan\\Desktop\\chatbot.txt'
+input_file = 'chatbot.txt'
 qa_pairs = load_qa_from_txt(input_file)
 
 # Inicializar histórico de conversas

@@ -1,0 +1,136 @@
+{
+    "intents": [
+      {
+        "tag": "saudacoes",
+        "patterns": [
+          "Oii",
+          "Ola",
+          "Oi?",
+          "Boa noite",
+          "Bom dia",
+          "Fala comigo"
+
+        ],
+        "responses": [
+          "Oi, como posso te ajudar?",
+          "Ola, como posso te ajudar?",
+          "Fala amigo, como posso te ajudar?"
+        ]
+      },
+      {
+        "tag": "minutas",
+        "patterns": ["O que tenho que fazer quando receber minutas?", "Quando chegar minutas o que faço?", "Recebi minutas no meu email"],
+        "responses": [
+          "Você deve entrar na pasta de pagamentos e abrir a planilha \"Controle de Pagamentos\", em seguida preencher os campos solicitados. Apenas depois de analisar e ver quando deve ser feito o pagamento criar a FS"
+        ]
+      },
+      {
+        "tag": "obrigado",
+        "patterns": ["Obrigado", "Tks", "Valeu", "Muito obrigado"],
+        "responses": ["Fico feliz em ajudar!", "Qualquer duvida pode me chamar!", "De nada"]
+      },
+      {
+        "tag": "consultorias",
+        "patterns": [
+          "O que fazer quando receber cobranças de consultorias?",
+          "Recebi cobranças de consultorias, o que eu faço?",
+          "Como prosseguir com as cobranças de consultorias?"
+        ],
+        "responses": [
+          "Você deve entrar na pasta de pagamentos e abrir a planilha 'Controle de Pagamentos', em seguida preencher os campos solicitado, as consultorias não tem Nº Processo. Apenas depois de analisar e ver quando deve ser feito o pagamento criar a FS."
+        ]
+      },
+      {
+        "tag": "contaRazão",
+        "patterns": [
+          "Quais são as Conta Razão?",
+          "Qual é a conta razão para honorarios?",
+          "Qual é a conta razão para consultoria ?"
+        ],
+        "responses": [
+          "Honorários – 72000203 / Consultoria – 72020201 / Orgacon – 72020201"
+        ]
+      },
+      {
+        "tag": "centroDeCusto",
+        "patterns": [
+          "Quais são os centros de custos?",
+          "Qual o centro de custo do contencioso?",
+          "Qual centro de custo eu uso?"
+        ],
+        "responses": [
+          "Contencioso – 330442 (Processos) / Planejamento – 330443 (Consultoria) / Orgacon – 333213 (Locação de Imóvel SY Comercial)"
+        ]
+      },
+      {
+        "tag": "folhaDeServiço",
+        "patterns": [
+          "O que é a Folha de Serviço?",
+          "Para o que serve uma FS?",
+          "O que é FS?"
+        ],
+        "responses": [
+          "A criação da FS deve ser realizado quando um pagamento precisa ser efetuado, garantindo que ele seja feito no momento adequado e de acordo com as condições estabelecidas, em caso de dúvida, consultar o contrato. Após a criação, você deve mandar para aprovação do gestor."
+        ]
+      },
+      {
+        "tag": "notaFiscal",
+        "patterns": [
+          "O que fazer quando receber e-mail de cobrança para emitir Nota Fiscal(NF)?",
+          "O que responder para o escritório quando pedir informações para fazer NF?"
+        ],
+        "responses": [
+          "Quando os escritórios mandarem cobranças para fazer NF, você deve ter a FS aprovada e mandar um e-mail com as seguintes informações: PO, FS, Valor. E quando o escritório responder, você deve salvar a NF na rede entrando no caminho J:\\PLAN_TRIBUT\\01. CONTENCIOSO\\14 - Pagamentos, Provisões e OMD\\Pagamentos\\Minutas e Notas Fiscais e depois ir até a pasta correta e nomear o arquivo com o padrão."
+        ]
+      },
+      {
+        "tag": "fazerFS",
+        "patterns": [
+          "Como fazer uma FS?",
+          "Como fazer uma Folha de serviço?"
+        ],
+        "responses": [
+          "Para fazer uma folha de serviço, você tem que acessar o SAP e utilizar a transação ML81N. Qualquer dúvida entrar na pasta J:\\PLAN_TRIBUT\\01. CONTENCIOSO\\14 - Pagamentos, Provisões e OMD\\Pagamentos\\Procedimentos e Instruções e acessar o arquivo Procedimento - Requisição de Compra e Folha de Serviço"
+        ]
+      },
+      {
+        "tag": "po",
+        "patterns": [
+          "O que é uma PO?"
+        ],
+        "responses": [
+          "PO é um saldo que temos para fazer pagamentos de um certo escritório, para pagamentos de minutas usamos normalmente a PO anual do escritório, já em caso de honorários de êxito temos uma PO específica para o caso por ser um valor elevado."
+        ]
+      },
+      {
+        "tag": "aprovador",
+        "patterns": [
+          "Qual aprovador devo usar?",
+          "Quais são os aprovadores?"
+        ],
+        "responses": [
+          "Thiago Vaz (tvazoli) até 10k dólares / Antonio Salomon (aneto10) acima de 10k dólares."
+        ]
+      },
+      {
+        "tag": "vendorNumber",
+        "patterns": [
+          "Qual vendor number eu utilizo?",
+          "Quais são os vendor number?"
+        ],
+        "responses": [
+          "G000000049: Pagamento de Depósitos Judiciais ou Depósitos Recursais / G000000033: Pagamentos de custas, acordos, execuções, garantias, honorários periciais / G000000051: Para pagamento de multas e Taxas (boletos). "
+        ]
+      },
+      {
+        "tag": "contasContabeis",
+        "patterns": [
+          "Quais são as contas contabeis?",
+          "Qual conta contabel eu uso?"
+        ],
+        "responses": [
+          "14900202 (Trabalhista) – Pagamento de Depósitos Judiciais ou Depósitos Recursais e Garantia / 80900262 – Pagamento de processo (valor principal, IR, INSS, sem provisão...) / 30800210 - Pagamento de processo com provisão / 80350200 – Pagamento de custas em gerais (honorários periciais, custas de Recursos) / 14900225 (Cível) – Pagamento de Depósitos Judiciais ou Depósitos Recursais e Garantia / 31300270 - Pagamento de processo com provisão"
+        ]
+      }
+    ]
+  }
